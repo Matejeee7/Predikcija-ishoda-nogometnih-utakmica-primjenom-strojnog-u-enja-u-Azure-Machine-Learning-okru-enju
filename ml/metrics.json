@@ -1,0 +1,140 @@
+{
+  "results": [
+    {
+      "model": "LogReg",
+      "best_params": {
+        "clf__C": 10.0
+      },
+      "accuracy": 0.44791464597478176,
+      "f1_macro": 0.40841934816593256,
+      "train_time_sec": 2.4472103118896484,
+      "confusion_matrix": [
+        [
+          808,
+          222,
+          451
+        ],
+        [
+          553,
+          240,
+          514
+        ],
+        [
+          731,
+          375,
+          1261
+        ]
+      ]
+    },
+    {
+      "model": "RandomForest",
+      "best_params": {
+        "clf__max_depth": 10,
+        "clf__n_estimators": 200
+      },
+      "accuracy": 0.4254122211445199,
+      "f1_macro": 0.4105160794400273,
+      "train_time_sec": 15.391710042953491,
+      "confusion_matrix": [
+        [
+          669,
+          423,
+          389
+        ],
+        [
+          447,
+          422,
+          438
+        ],
+        [
+          585,
+          680,
+          1102
+        ]
+      ]
+    },
+    {
+      "model": "GradientBoosting",
+      "best_params": {
+        "clf__learning_rate": 0.1,
+        "clf__max_depth": 3,
+        "clf__n_estimators": 200
+      },
+      "accuracy": 0.4843840931134821,
+      "f1_macro": 0.33577703266419784,
+      "train_time_sec": 24.45455265045166,
+      "confusion_matrix": [
+        [
+          466,
+          8,
+          1007
+        ],
+        [
+          284,
+          9,
+          1014
+        ],
+        [
+          337,
+          8,
+          2022
+        ]
+      ]
+    },
+    {
+      "model": "SVM",
+      "best_params": {
+        "clf__C": 0.5,
+        "clf__gamma": "scale"
+      },
+      "accuracy": 0.4289039767216295,
+      "f1_macro": 0.415966223711673,
+      "train_time_sec": 386.5744595527649,
+      "confusion_matrix": [
+        [
+          719,
+          404,
+          358
+        ],
+        [
+          476,
+          429,
+          402
+        ],
+        [
+          605,
+          699,
+          1063
+        ]
+      ]
+    },
+    {
+      "model": "KNN",
+      "best_params": {
+        "clf__n_neighbors": 5,
+        "clf__weights": "uniform"
+      },
+      "accuracy": 0.3972841901066925,
+      "f1_macro": 0.37143975132861634,
+      "train_time_sec": 0.6785082817077637,
+      "confusion_matrix": [
+        [
+          633,
+          332,
+          516
+        ],
+        [
+          499,
+          292,
+          516
+        ],
+        [
+          725,
+          519,
+          1123
+        ]
+      ]
+    }
+  ],
+  "best_model": "SVM"
+}
